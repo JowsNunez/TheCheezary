@@ -11,13 +11,20 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
 
-        var btnColdDrinks: Button =findViewById(R.id.cold_drinks_button)
+        var btnColdDrinks: Button = findViewById(R.id.cold_drinks_button)
+        var btnHotDrinks: Button = findViewById(R.id.hot_button)
 
-        btnColdDrinks.setOnClickListener{
+        btnColdDrinks.setOnClickListener {
 
-            var intent: Intent = Intent(this,ProductsActivity::class.java)
+            var intent: Intent = Intent(this, ProductsActivity::class.java)
             startActivity(intent)
 
+
+        }
+        btnHotDrinks.setOnClickListener {
+
+            var intent: Intent = Intent(this, HotdrinksActivity::class.java)
+            startActivity(intent)
 
         }
 
