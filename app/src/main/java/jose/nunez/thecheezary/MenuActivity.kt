@@ -13,6 +13,7 @@ class MenuActivity : AppCompatActivity() {
 
         var btnColdDrinks: Button = findViewById(R.id.cold_drinks_button)
         var btnHotDrinks: Button = findViewById(R.id.hot_button)
+        var btnSwets: Button = findViewById(R.id.sweets_button)
 
         btnColdDrinks.setOnClickListener {
 
@@ -26,6 +27,11 @@ class MenuActivity : AppCompatActivity() {
             var intent: Intent = Intent(this, HotdrinksActivity::class.java)
             startActivity(intent)
 
+        }
+
+        btnSwets.setOnClickListener{
+            var intent: Intent = Intent(this,SwetsActivity::class.java)
+            startActivity(intent)
         }
 
     }
